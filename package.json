@@ -1,6 +1,6 @@
 {
   "name": "semoi-obsidian",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Obsidian plugin client for semoi.net — capture keystroke evidence and mint proof-of-writing certificates.",
   "main": "main.js",
   "scripts": {
