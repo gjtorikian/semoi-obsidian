@@ -1,0 +1,10 @@
+{
+  "id": "semoi",
+  "name": "Semoi — Proof of Writing",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Capture keystroke evidence as you write and mint cryptographic proof-of-writing certificates via semoi.net.",
+  "author": "gjtorikian",
+  "authorUrl": "https://github.com/gjtorikian",
+  "isDesktopOnly": false
+}
