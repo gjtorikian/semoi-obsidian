@@ -115,7 +115,13 @@ Drop `main.js`, `manifest.json` into
 ## Release flow
 
 ```
-npm version patch        # bumps all three files, commits, tags
-git push --follow-tags   # triggers the workflow
-# → review the draft release on GitHub, click Publish
+./scripts/release.sh patch   # or minor / major / x.y.z
 ```
+
+The script validates the working tree, runs typecheck + tests + build,
+then `npm version` bumps `package.json`, `manifest.json`, and
+`versions.json`, commits, and creates a bare signed tag (no `v` prefix —
+Obsidian requires this). The push triggers `.github/workflows/release.yml`,
+which rebuilds on CI, attests `main.js` build provenance, and uploads
+`main.js` + `manifest.json` to a draft GitHub release. Review and publish
+from the GitHub UI.
