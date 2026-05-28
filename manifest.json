@@ -1,6 +1,6 @@
 {
   "id": "semoi",
-  "name": "Semoi — Proof of Writing",
+  "name": "Semoi",
   "version": "0.1.3",
   "minAppVersion": "1.10.0",
   "description": "Capture keystroke evidence as you write and mint cryptographic proof-of-writing certificates via semoi.net.",
